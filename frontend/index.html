@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alzheimer's Classifier</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="/frontend/style.css">
+    <!-- Link to the external JavaScript file, 'defer' makes it load after the HTML -->
+    <script src="/frontend/app.js" defer></script>
+</head>
+<body>
+
+    <!-- --- Sidebar --- -->
+    <aside class="sidebar">
+        <div class="about-box">
+            <h3>About This Project</h3>
+            <p>This app demonstrates a fine-tuned EfficientNetB0 model for a megaproject. The model was trained on the 'Best Alzheimer's MRI Dataset' to classify scans into four stages.</p>
+        </div>
+        <br>
+        <h3>Model</h3>
+        <p>EfficientNetB0 (Fine-Tuned)</p>
+        <h3>Accuracy</h3>
+        <p>~99.30% (on test set)</p>
+    </aside>
+
+    <!-- --- Main Content --- -->
+    <main class="main-content">
+        <h1>🧠 Alzheimer's Stage Classification</h1>
+
+        <div class="container">
+            <!-- Column 1: Uploader -->
+            <div class="column col-1">
+                <h2>Upload Your Scan</h2>
+                
+                <label for="file-uploader" class="file-label" id="file-label-text">
+                    Drag and drop file here
+                    <br>or<br>
+                    Browse files
+                </label>
+                <input type="file" id="file-uploader" accept="image/png, image/jpeg, image/jpg">
+
+                <img id="image-preview" class="hidden" alt="Uploaded MRI Scan">
+            </div>
+
+            <!-- Column 2: Prediction -->
+            <div class="column col-2">
+                <h2>Prediction</h2>
+                <button id="classify-btn" disabled>Classify Scan</button>
+                
+                <div id="results-area" class="hidden">
+                    <div id="prediction-box" class="prediction-box"></div>
+                    <p id="confidence-text" class="confidence-text"></p>
+                    <div class="progress-bar-container">
+                        <div id="progress-bar-fill"></div>
+                    </div>
+                </div>
+                
+                <div id="spinner" class="hidden"></div>
+                <p id="default-text">Please upload an image to be classified.</p>
+                <p id="error-text" class="hidden"></p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+Flask
+Flask-CORS  # <-- NEW: This is essential for a separate frontend
+tensorflow
+numpy
+Pillow
+gunicorn

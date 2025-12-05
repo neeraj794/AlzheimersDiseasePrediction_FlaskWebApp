@@ -1,0 +1,9 @@
+# Ignore the virtual environment
+Myenv/
+__pycache__/
+
+# Ignore the large model file (it's too big for GitHub)
+*.keras
+
+# Ignore VS Code settings
+.vscode/
