@@ -24,55 +24,15 @@ User-Friendly UI: Drag-and-drop file upload with a modern dark-mode interface.
 
 We trained and evaluated four different architectures on the Kaggle Alzheimer's MRI Dataset.
 
-Model
+Model          Type              Test Accuracy F1-Score Status
 
-Type
+EfficientNetB0 Transfer Learning 99.30%        0.99     🏆 Champion
 
-Test Accuracy
+Custom CNN     Built from Scratch 91.60%       0.91      Baseline
 
-F1-Score
+ResNet50       Transfer Learning  83.10%       0.82      Overfitting
 
-Status
-
-EfficientNetB0
-
-Transfer Learning
-
-99.30%
-
-0.99
-
-🏆 Champion
-
-Custom CNN
-
-Built from Scratch
-
-91.60%
-
-0.91
-
-Baseline
-
-ResNet50
-
-Transfer Learning
-
-83.10%
-
-0.82
-
-Overfitting
-
-DenseNet121
-
-Transfer Learning
-
-73.20%
-
-0.72
-
-Poor Generalization
+DenseNet121    Transfer Learning  73.20%       0.72      Poor Generalization
 
 🛠️ Tech Stack
 
